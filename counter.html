@@ -1,0 +1,49 @@
+ <html>
+    <head>
+        <title>Counter</title>
+    </head>
+    <body>
+        <h2>Counter: <span id="count">0</span></h2>
+        <button onclick="increase()">Increase +</button>
+        <button onclick="decrease()">Decrease -</button>
+         <button onclick="reset()">Reset</button>
+          <h2>Calculator:<span id="result">0</span></h2>
+         <button onclick="add()">Add</button>
+         <button onclick="subtract()">Subtract</button>
+         <button onclick="divide()">Divide</button>
+         <button onclick="multiply()">Multiply</button>
+    </body>
+    <script>
+        let count = 0;
+        function increase() {
+            count++;
+            document.getElementById("count").innerText = count;
+        }
+        function decrease() {
+            count--;
+            document.getElementById("count").innerText = count;
+        }
+        function reset() {
+            count = 0;
+            document.getElementById("count").innerText = count;
+        }
+        let result = 0;
+        let a= 10;
+        let b= 5;
+        function add(){
+            result = a + b;
+            document.getElementById("result").innerText = result;  
+        }
+        function subtract(){
+            result = a - b;
+            document.getElementById("result").innerText = result; 
+        }
+        function divide(){
+            result = a / b;
+            document.getElementById("result").innerText = result;
+        }
+        function multiply(){
+            result = a * b;
+            document.getElementById("result").innerText = result;
+        }
+    </script>
